@@ -1,0 +1,44 @@
+SELECT
+    *
+FROM
+    data_jobs;
+--
+SELECT
+    *
+FROM
+    data_jobs
+LIMIT
+    5;
+--
+SELECT
+    *
+FROM
+    data_jobs
+OFFSET
+    3
+LIMIT
+    5;
+--
+SELECT
+    work_year,
+    experience_level,
+    job_title,
+    salary_in_usd,
+    company_size
+FROM
+    data_jobs;
+--
+SELECT
+    * EXCLUDE (work_year, job_title)
+FROM
+    data_jobs;
+--
+SELECT DISTINCT
+    emplyment_type
+FROM
+    data_jobs;
+--
+SELECT DISTINCT
+    experience_level
+FROM
+    data_jobs;
